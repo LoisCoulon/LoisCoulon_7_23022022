@@ -1,29 +1,195 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- normalize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
-    integrity="sha512-+qB2aif4IuUw+c0tH5w7iYmr7v6AJ+FLUqr2wfr3Ms9jP6IGKSZhO0h4B9uEpBh1TuPt6Bo8HLWTlAFX1vccZQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-+qB2aif4IuUw+c0tH5w7iYmr7v6AJ+FLUqr2wfr3Ms9jP6IGKSZhO0h4B9uEpBh1TuPt6Bo8HLWTlAFX1vccZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- normalize -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
-    <script src="https://kit.fontawesome.com/e90458a561.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <title>Les petits plats</title>
 </head>
+
 <body>
     <header>
-        <img src="" alt="logo titre">
+        <i class="fal fa-hat-chef"></i>
+        <h1>Les petits plats</h1>
     </header>
     <section id="search-section" class="search-section">
-        <input id="search-bar" class="search-bar" type="search" placeholder="Rechercher une recette">
-        <i class="fas fa-search"></i> 
+
+        <div class="search">
+            <input id="search-bar" class="search-bar" type="search" placeholder="Rechercher une recette">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="filters">
+            <div class="ingredients">
+                <input type="text" value="Ingrédients">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="appliances">
+                <input type="text" value="Appareils">
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="ustensils">
+                <input type="text" value="Ustensiles">
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="recipe-section" class="recipe-section">
+        <div class="recipes">
+
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. </p>
+                    </div>
+                </div>
+
+            </article>
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. Duis quis placerat ipsum. Etiam iaculis, urna vitae luctus luctus, diam sem tempus ligula, et tincidunt nulla tellus in odio. Praesent sed imperdiet tellus. Aenean diam magna, pulvinar et volutpat quis, facilisis venenatis massa. Sed at nunc vitae nibh aliquam suscipit sit amet vehicula felis. Nulla vulputate eget massa in dictum.</p>
+                    </div>
+                </div>
+
+            </article>
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. Duis quis placerat ipsum. Etiam iaculis, urna vitae luctus luctus, diam sem tempus ligula, et tincidunt nulla tellus in odio. Praesent sed imperdiet tellus. Aenean diam magna, pulvinar et volutpat quis, facilisis venenatis massa. Sed at nunc vitae nibh aliquam suscipit sit amet vehicula felis. Nulla vulputate eget massa in dictum.</p>
+                    </div>
+                </div>
+
+            </article>
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. Duis quis placerat ipsum. Etiam iaculis, urna vitae luctus luctus, diam sem tempus ligula, et tincidunt nulla tellus in odio. Praesent sed imperdiet tellus. Aenean diam magna, pulvinar et volutpat quis, facilisis venenatis massa. Sed at nunc vitae nibh aliquam suscipit sit amet vehicula felis. Nulla vulputate eget massa in dictum.</p>
+                    </div>
+                </div>
+
+            </article>
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. Duis quis placerat ipsum. Etiam iaculis, urna vitae luctus luctus, diam sem tempus ligula, et tincidunt nulla tellus in odio. Praesent sed imperdiet tellus. Aenean diam magna, pulvinar et volutpat quis, facilisis venenatis massa. Sed at nunc vitae nibh aliquam suscipit sit amet vehicula felis. Nulla vulputate eget massa in dictum.</p>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="thumbnail">
+                <img src="" alt="">
+                <div class="thumbnail-head">
+                    <h2>Limonade de coco</h2>
+                    <div class="clock">
+                        <i class="far fa-clock"></i>
+                        <span>10min</span>
+                    </div>
+                </div>
+                <div class="thumbnail-body">
+                    <div class="thumbnail-body-ingredients">
+                        <p>Lait de coco</p>
+                        <p>Jus de citron</p>
+                        <p>creme de coco</p>
+                        <p>...</p>
+                    </div>
+                    <div class="thumbnail-body-recipe">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit euismod ullamcorper. Duis quis placerat ipsum. Etiam iaculis, urna vitae luctus luctus, diam sem tempus ligula, et tincidunt nulla tellus in odio. Praesent sed imperdiet tellus. Aenean diam magna, pulvinar et volutpat quis, facilisis venenatis massa. Sed at nunc vitae nibh aliquam suscipit sit amet vehicula felis. Nulla vulputate eget massa in dictum.</p>
+                    </div>
+                </div>
+
+            </article>
+        </div>
     </section>
 </body>
+
 </html>

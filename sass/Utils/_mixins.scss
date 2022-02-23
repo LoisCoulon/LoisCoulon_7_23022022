@@ -1,1 +1,22 @@
+@mixin filter {
+    margin: 10px;
+    width: 170px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+}
 
+@mixin filter-input {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    &:focus-visible{
+        outline: none;
+    }
+}
