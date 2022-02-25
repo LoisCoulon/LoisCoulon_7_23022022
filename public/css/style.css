@@ -19,6 +19,7 @@ header .fal {
 header h1 {
   color: #D04F4F;
   font-size: 36px;
+  margin-top: 0;
 }
 
 .search-section {
@@ -135,7 +136,7 @@ header h1 {
   justify-content: center;
   margin: 20px 0 50px 0;
 }
-.recipe-section .recipes {
+.recipe-section .recipes-container {
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,7 +153,7 @@ header h1 {
 }
 .recipe-section .thumbnail img {
   background-color: #cecece;
-  height: 170px;
+  height: 100%;
   width: 100%;
 }
 .recipe-section .thumbnail-head {
@@ -164,24 +165,34 @@ header h1 {
 }
 .recipe-section .thumbnail-head h2 {
   font-weight: 400;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .recipe-section .thumbnail-head .clock {
   font-size: 18px;
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .recipe-section .thumbnail-body {
   width: 90%;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   font-size: 0.75em;
+  height: 100%;
 }
 .recipe-section .thumbnail-body-ingredients {
   width: 50%;
   margin-right: 5px;
+  height: 100%;
 }
 .recipe-section .thumbnail-body-recipe {
   width: 50%;
   margin-left: 5px;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

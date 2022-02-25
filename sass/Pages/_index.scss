@@ -12,6 +12,7 @@ header {
   h1 {
     color: $orange;
     font-size: 36px;
+    margin-top: 0;
   }
 }
 
@@ -87,7 +88,7 @@ header {
   justify-content: center;
   margin: 20px 0 50px 0;
 
-  .recipes{
+  .recipes-container{
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -104,7 +105,7 @@ header {
     overflow: hidden;
     img{
       background-color: darken($color: $grey, $amount: 10);
-      height: 170px;
+      height: 100%;
       width: 100%;
     }
 
@@ -117,25 +118,35 @@ header {
       
       h2{
         font-weight: 400;
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
       .clock{
         font-size: 18px;
         font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
     &-body{
       width: 90%;
       display: flex;
-      overflow: auto;
+      overflow: hidden;
       font-size: 0.75em;
+      height: 100%;
 
       &-ingredients{
         width: 50%;
         margin-right: 5px;
+        height: 100%;
       }
       &-recipe{
         width: 50%;
         margin-left: 5px;
+        height: 100%;
       }
     }
   }
