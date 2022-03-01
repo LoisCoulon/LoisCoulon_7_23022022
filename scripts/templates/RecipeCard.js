@@ -1,21 +1,15 @@
 class RecipeCard {
   constructor(recipe) {
-    this.id = recipe.id;
     this.name = recipe.name
-    this.servings = recipe.servings
     this.ingredients = recipe.ingredients
     this.time = recipe.time
     this.description = recipe.description
-    this.appliance = recipe.appliance
-    this.ustensils = recipe.ustensils
   }
 
   createRecipeCard() {
-    const container = document.createElement("article");
-    container.classList.add("thumbnail");
-    // const ingredient = this.getIngredients(this.ingredients)
-
+  
     const recipeCard = `
+              <article class="thumbnail">
                 <img src="" alt="Illustration de ${this.name}">
                 <div class="thumbnail-head">
                     <h2>${this.name}</h2>
@@ -34,10 +28,10 @@ class RecipeCard {
                         <p>${this.description} </p>
                     </div>
                 </div>
+              </article>
         `;
 
-    container.innerHTML = recipeCard;
-    return container;
+    return recipeCard;
   }
 
   getIngredients(ingredients) {

@@ -1,13 +1,14 @@
 class RecipeFactory{
     constructor(recipes) {
         this.recipes = recipes
-        this.recipeContainer = document.querySelector(".recipes-container");
     }
 
     createRecipes() {
+        let recipeCardsDom = ""
         this.recipes.forEach(recipe => {
             const Template = new RecipeCard(recipe)
-            this.recipeContainer.appendChild(Template.createRecipeCard())
+            recipeCardsDom += Template.createRecipeCard()
         });
+        document.querySelector('.recipes-container').innerHTML = recipeCardsDom
     }
 }

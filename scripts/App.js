@@ -7,6 +7,7 @@ class App {
 
   async main() {
     new RecipeFactory(this.recipes).createRecipes()
+    new FilterData(recipes).filterData()
   }
 }
 
