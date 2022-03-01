@@ -82,20 +82,20 @@ header {
   }
 }
 
-.recipe-section{
+.recipe-section {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px 0 50px 0;
 
-  .recipes-container{
+  .recipes-container {
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px;
   }
 
-  .thumbnail{
+  .thumbnail {
     height: 350px;
     background-color: $grey;
     display: flex;
@@ -103,27 +103,27 @@ header {
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
-    img{
+    img {
       background-color: darken($color: $grey, $amount: 10);
       height: 100%;
       width: 100%;
     }
 
-    &-head{
-      margin:10px;
+    &-head {
+      margin: 10px;
       width: 90%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
-      h2{
+
+      h2 {
         font-weight: 400;
         font-size: 18px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .clock{
+      .clock {
         font-size: 18px;
         font-weight: 700;
         overflow: hidden;
@@ -131,24 +131,31 @@ header {
         white-space: nowrap;
       }
     }
-    &-body{
+    &-body {
       width: 90%;
       display: flex;
       overflow: hidden;
       font-size: 0.75em;
       height: 100%;
 
-      &-ingredients{
+      &-ingredients {
         width: 50%;
         margin-right: 5px;
         height: 100%;
+
+        span {
+          font-weight: 600;
+        }
       }
-      &-recipe{
+      &-recipe {
         width: 50%;
         margin-left: 5px;
         height: 100%;
+
+        &:hover {
+          overflow: auto;
+        }
       }
     }
   }
 }
-

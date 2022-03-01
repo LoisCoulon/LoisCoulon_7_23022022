@@ -189,10 +189,16 @@ header h1 {
   margin-right: 5px;
   height: 100%;
 }
+.recipe-section .thumbnail-body-ingredients span {
+  font-weight: 600;
+}
 .recipe-section .thumbnail-body-recipe {
   width: 50%;
   margin-left: 5px;
   height: 100%;
+}
+.recipe-section .thumbnail-body-recipe:hover {
+  overflow: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
