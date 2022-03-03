@@ -6,17 +6,34 @@
     align-items: center;
     border-radius: 5px;
     padding: 0 10px;
-}
+    position: relative;
 
-@mixin filter-input {
-    height: 100%;
-    width: 100%;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    &:focus-visible{
-        outline: none;
+    &-active {
+        width: 40%;
+        transition: 500ms;
+
+        .fas {
+          transition: 500ms;
+          transform: rotate(180deg);
+        }
+    }
+
+    input{
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &::placeholder{
+            color: #ffffff
+        }
+
+        &:focus-visible{
+            outline: none;
+        }
     }
 }
+

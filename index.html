@@ -28,6 +28,7 @@
         <i class="fal fa-hat-chef"></i>
         <h1>Les petits plats</h1>
     </header>
+    <main>
     <section id="search-section" class="search-section">
 
         <div class="search">
@@ -37,15 +38,36 @@
 
         <div class="filters">
             <div class="ingredients">
-                <input type="text" value="Ingrédients">
+                <input type="text" aria-label="Rechercher un ingrédient" placeholder="Ingrédients" name="Ingrédients"> 
                 <i class="fas fa-angle-down"></i>
+                <!-- <ul class="ingredients-list">
+                    <li>
+                        kfjls
+                    </li>
+                    <li>
+                        kfjls
+                    </li>
+                    <li>
+                        kfjls
+                    </li>
+                    <li>
+                        kfjls
+                    </li>
+                    <li>
+                        kfjls
+                    </li>
+                    <li>
+                        kfjls
+                    </li>
+
+                </ul>                -->
             </div>
             <div class="appliances">
-                <input type="text" value="Appareils">
+                <input type="text" aria-label="Rechercher un appareil" placeholder="Appareils" name="Appareils">
                 <i class="fas fa-angle-down"></i>
             </div>
             <div class="ustensils">
-                <input type="text" value="Ustensiles">
+                <input type="text" aria-label="Rechercher un ustensile" placeholder="Ustensiles" name="Ustensiles"> 
                 <i class="fas fa-angle-down"></i>
             </div>
         </div>
@@ -57,10 +79,14 @@
 
         </div>
     </section>
+</main>
+
     <script src="./scripts/templates/RecipeCard.js"></script>
     <script src="./scripts/templates/RecipeFactory.js"></script>
     <script src="./scripts/utils/FilterData.js"></script>
+    <script src="./scripts/utils/filters.js"></script>
     <script src="./scripts/App.js" type="module"></script>
+
 </body>
 
 </html>

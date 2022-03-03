@@ -55,15 +55,30 @@ header {
       background-color: $blue;
       input {
         background-color: $blue;
-        @include filter-input;
       }
+
+      &-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        width: 100%;
+        background: $blue;
+        list-style: none;
+        border-radius: 0 0 5px 5px;
+        max-height: 250px;
+
+        li{
+          color: white;
+          margin: 5px 10px;
+        }
+      }
+      
     }
     .appliances {
       @include filter;
       background-color: $green;
       input {
         background-color: $green;
-        @include filter-input;
       }
     }
     .ustensils {
@@ -71,7 +86,6 @@ header {
       background-color: $orange;
       input {
         background-color: $orange;
-        @include filter-input;
       }
     }
     .fas {
@@ -103,6 +117,12 @@ header {
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;    
+    }
+
     img {
       background-color: darken($color: $grey, $amount: 10);
       height: 100%;
@@ -151,10 +171,8 @@ header {
         width: 50%;
         margin-left: 5px;
         height: 100%;
-
-        &:hover {
-          overflow: auto;
-        }
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }
