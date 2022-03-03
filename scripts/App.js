@@ -1,15 +1,15 @@
 import { recipes } from "../data/recipes.js";
 
 class App {
-  constructor() {
-    this.recipes = recipes
+  constructor(recipes) {
+    this.recipes = recipes;
   }
 
   async main() {
-    new RecipeFactory(this.recipes).createRecipes()
-    new FilterData(recipes).filterData()
+    new RecipeFactory(this.recipes).createRecipes();
+    new FilterData(this.recipes).filterData();
   }
 }
 
-const app = new App();
+const app = new App(recipes);
 app.main();
