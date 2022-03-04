@@ -1,31 +1,43 @@
 @mixin filter {
     margin: 10px;
     width: 170px;
-    height: 69px;
+    height: 4em;
     display: flex;
-    align-items: center;
     border-radius: 5px;
-    padding: 0 10px;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     &-active {
         width: 40%;
-        transition: 500ms;
+        border-radius: 5px 5px 0 0;
+        transition: all 500ms;
+        box-shadow: $shadow;
+
+        ul{
+            display: grid;
+            opacity: 1;
+        }
 
         .fas {
+            width: 10%;
           transition: 500ms;
           transform: rotate(180deg);
+        }
+        input{
+            width: 100%;
         }
     }
 
     input{
         height: 100%;
-        width: 100%;
+        width: 80%;
         color: white;
         font-size: 18px;
         font-weight: 700;
         border: none;
         border-radius: 5px;
+        padding: 10px;
         cursor: pointer;
         &::placeholder{
             color: #ffffff
