@@ -3,25 +3,26 @@ const selectAppliances = document.querySelector(".appliances");
 const selectUstensils = document.querySelector(".ustensils");
 
 function openDropDown(element) {
-  const input = element.firstElementChild
+  const input = element.firstElementChild;
   const selector = element.className;
   element.classList.add(selector + "-active");
-  input.setAttribute("placeHolder", input.ariaLabel) 
+  input.setAttribute("placeHolder", input.ariaLabel);
 }
 
 function closeDropDown(element) {
-  const input = element.firstElementChild
+  const input = element.firstElementChild;
   element.classList.remove(element.classList.item(1));
-  input.setAttribute("placeHolder", input.name) 
+  input.setAttribute("placeHolder", input.name);
 }
 
 function dropdown(element) {
-  element.addEventListener("click", function () {
-
-    if (element.classList.length > 1) {
-      closeDropDown(element)
+  window.addEventListener("click", function (e) {
+    if (element.contains(e.target) && element.classList.length === 1) {
+      openDropDown(element);
+    } else if (!element.contains(e.target) && element.classList.length > 1) {
+      closeDropDown(element);
+    } else if (element.contains(e.target) && element.classList.length > 1) {
     } else {
-      openDropDown(element)
     }
   });
 }

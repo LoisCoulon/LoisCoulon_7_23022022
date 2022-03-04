@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
         integrity="sha512-Yu3tDzlofwBycOX5qb6K4tGJKGD72LA/9ckyioo8plGOdLwIeESQgo+KY4M+gvBJvDguqYeweLVTIn+S/9ZC/Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
-        integrity="sha512-+qB2aif4IuUw+c0tH5w7iYmr7v6AJ+FLUqr2wfr3Ms9jP6IGKSZhO0h4B9uEpBh1TuPt6Bo8HLWTlAFX1vccZQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- normalize -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,42 +26,80 @@
         <h1>Les petits plats</h1>
     </header>
     <main>
-    <section id="search-section" class="search-section">
+        <section id="search-section" class="search-section">
 
-        <div class="search">
-            <input id="search-bar" class="search-bar" type="search" placeholder="Rechercher une recette">
-            <i class="fas fa-search"></i>
-        </div>
-
-        <div class="filters">
-            <div class="ingredients">
-                <input type="text" aria-label="Rechercher un ingrédient" placeholder="Ingrédients" name="Ingrédients"> 
-                <i class="fas fa-angle-down"></i>
-                <ul class="ingredients-list">
-                </ul>               
+            <div class="search">
+                <input id="search-bar" class="search-bar" type="search" placeholder="Rechercher une recette">
+                <i class="fas fa-search"></i>
             </div>
-            <div class="appliances">
-                <input type="text" aria-label="Rechercher un appareil" placeholder="Appareils" name="Appareils">
-                <i class="fas fa-angle-down"></i>
-                <ul class="appliances-list">
-                </ul> 
+
+            <div class="filters">
+                <div class="ingredients">
+                    <input type="text" aria-label="Rechercher un ingrédient" placeholder="Ingrédients"
+                        name="Ingrédients">
+                    <i class="fas fa-angle-down" id="ingArrow"></i>
+                    <ul class="ingredients-list">
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+                        <li>lkdfhlsdk</li>
+
+                    </ul>
+                </div>
+                <div class="appliances">
+                    <input type="text" aria-label="Rechercher un appareil" placeholder="Appareils" name="Appareils">
+                    <i class="fas fa-angle-down" id="appliArrow"></i>
+                    <ul class="appliances-list">
+                    </ul>
+                </div>
+                <div class="ustensils">
+                    <input type="text" aria-label="Rechercher un ustensile" placeholder="Ustensiles" name="Ustensiles">
+                    <i class="fas fa-angle-down" id="ustArrow"></i>
+                    <ul class="ustensils-list">
+                    </ul>
+                </div>
             </div>
-            <div class="ustensils">
-                <input type="text" aria-label="Rechercher un ustensile" placeholder="Ustensiles" name="Ustensiles"> 
-                <i class="fas fa-angle-down"></i>
-                <ul class="ustensils-list">
-                </ul> 
+
+        </section>
+
+        <section id="recipe-section" class="recipe-section">
+            <div class="recipes-container">
+
             </div>
-        </div>
-
-    </section>
-
-    <section id="recipe-section" class="recipe-section">
-        <div class="recipes-container">
-
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
     <script src="./scripts/templates/RecipeCard.js"></script>
     <script src="./scripts/templates/RecipeFactory.js"></script>

@@ -114,6 +114,7 @@ header h1 {
   list-style: none;
   border-radius: 0 0 5px 5px;
   max-height: 250px;
+  overflow: auto;
 }
 .search-section .filters .ingredients-list li {
   color: white;
