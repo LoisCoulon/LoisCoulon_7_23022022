@@ -1,40 +1,32 @@
 class ListItem {
-  constructor(recipe) {
-    this.id = recipe.id;
-    this.name = recipe.name;
-    this.servings = recipe.servings;
-    this.ingredients = recipe.ingredients;
-    this.appliance = recipe.appliance;
-    this.ustensils = recipe.ustensils;
+  constructor(data) {
+    this.ingredients = data;
+    this.appliances = data;
+    this.ustensils = data;
   }
 
   createIngredientsList() {
-    const ingredientsList = this.ingredients
-      .map((ingredient) => this.getIngredients(ingredient))
-      .join("");
-
+    let ingredientsList = ``
+    this.ingredients.forEach(ingredient => {
+      ingredientsList += `<li>${ingredient}</li>`;
+    });
     return ingredientsList;
   }
 
   createAppliancesList() {
-    const appliancesList = `<li>${this.appliance}</li>`;
+    let appliancesList = ``
+    this.appliances.forEach(appliance => {
+      appliancesList += `<li>${appliance}</li>`;
+    });
     return appliancesList;
   }
 
   createUstensilsList() {
-    const ustensilssList = this.ustensils.map(ustensil => this.getUstensils(ustensil)).join("")
-    return ustensilssList
+    let ustensilsList = ``
+    this.ustensils.forEach(ustensil=> {
+      ustensilsList += `<li>${ustensil}</li>`
+    })
+    return ustensilsList
   }
-
-  getIngredients(ingredients) {
-    let ingredientDOM = `<li>${ingredients.ingredient}</li>`;
-
-    return ingredientDOM;
-  }
-
-  getUstensils(ustensils) {
-    let ustensilsDOM = `<li>${ustensils}</li>`
-
-    return ustensilsDOM
-  }
+  
 }
