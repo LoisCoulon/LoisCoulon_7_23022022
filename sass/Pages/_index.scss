@@ -57,24 +57,10 @@ header {
         background-color: $blue;
       }
 
-      &-list{
-        display: none;
-        opacity: 0;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-between;
-        width: 100%;
-        background: $blue;
-        list-style: none;
-        border-radius: 0 0 5px 5px;
-        max-height: 250px;
-        overflow: auto;
-
-        li{
-          color: white;
-          margin: 5px 10px;
-        }
+      &-list {
+        @include list;
+        background-color: $blue;
       }
-      
     }
     .appliances {
       @include filter;
@@ -82,11 +68,19 @@ header {
       input {
         background-color: $green;
       }
+      &-list {
+        @include list;
+        background-color: $green;
+      }
     }
     .ustensils {
       @include filter;
       background-color: $orange;
       input {
+        background-color: $orange;
+      }
+      &-list {
+        @include list;
         background-color: $orange;
       }
     }
@@ -123,8 +117,8 @@ header {
     overflow: hidden;
     cursor: pointer;
 
-    &:hover{
-      box-shadow: $shadow
+    &:hover {
+      box-shadow: $shadow;
     }
 
     img {

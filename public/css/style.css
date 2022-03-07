@@ -110,15 +110,18 @@ header h1 {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   width: 100%;
-  background: #3282F7;
   list-style: none;
   border-radius: 0 0 5px 5px;
   max-height: 250px;
   overflow: auto;
+  background-color: #3282F7;
 }
 .search-section .filters .ingredients-list li {
   color: white;
   margin: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .search-section .filters .appliances {
   margin: 10px;
@@ -169,6 +172,25 @@ header h1 {
 .search-section .filters .appliances input {
   background-color: #68D9A4;
 }
+.search-section .filters .appliances-list {
+  display: none;
+  opacity: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  max-height: 250px;
+  overflow: auto;
+  background-color: #68D9A4;
+}
+.search-section .filters .appliances-list li {
+  color: white;
+  margin: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .search-section .filters .ustensils {
   margin: 10px;
   width: 170px;
@@ -217,6 +239,25 @@ header h1 {
 }
 .search-section .filters .ustensils input {
   background-color: #D04F4F;
+}
+.search-section .filters .ustensils-list {
+  display: none;
+  opacity: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  max-height: 250px;
+  overflow: auto;
+  background-color: #D04F4F;
+}
+.search-section .filters .ustensils-list li {
+  color: white;
+  margin: 5px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .search-section .filters .fas {
   width: 20%;

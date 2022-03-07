@@ -21,6 +21,8 @@ function dropdown(element) {
       openDropDown(element);
     } else if (!element.contains(e.target) && element.classList.length > 1) {
       closeDropDown(element);
+    } else if(e.target.classList.contains("fa-angle-down")) {
+      closeDropDown(element);
     } else if (element.contains(e.target) && element.classList.length > 1) {
     } else {
     }

@@ -1,51 +1,69 @@
 @mixin filter {
-    margin: 10px;
-    width: 170px;
-    height: 4em;
-    display: flex;
+  margin: 10px;
+  width: 170px;
+  height: 4em;
+  display: flex;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &-active {
+    width: 40%;
+    border-radius: 5px 5px 0 0;
+    transition: all 500ms;
+    box-shadow: $shadow;
+
+    ul {
+      display: grid;
+      opacity: 1;
+    }
+
+    .fas {
+      width: 10%;
+      transition: 500ms;
+      transform: rotate(180deg);
+    }
+    input {
+      width: 100%;
+    }
+  }
+
+  input {
+    height: 100%;
+    width: 80%;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
     border-radius: 5px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    &-active {
-        width: 40%;
-        border-radius: 5px 5px 0 0;
-        transition: all 500ms;
-        box-shadow: $shadow;
-
-        ul{
-            display: grid;
-            opacity: 1;
-        }
-
-        .fas {
-            width: 10%;
-          transition: 500ms;
-          transform: rotate(180deg);
-        }
-        input{
-            width: 100%;
-        }
+    padding: 10px;
+    cursor: pointer;
+    &::placeholder {
+      color: #ffffff;
     }
 
-    input{
-        height: 100%;
-        width: 80%;
-        color: white;
-        font-size: 18px;
-        font-weight: 700;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        cursor: pointer;
-        &::placeholder{
-            color: #ffffff
-        }
-
-        &:focus-visible{
-            outline: none;
-        }
+    &:focus-visible {
+      outline: none;
     }
+  }
 }
 
+@mixin list {
+  display: none;
+  opacity: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+  max-height: 250px;
+  overflow: auto;
+  li {
+    color: white;
+    margin: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
