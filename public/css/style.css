@@ -72,6 +72,7 @@ header h1 {
 .search-section .tags ul .tags-ingredient img {
   width: 1.2em;
   margin-left: 6px;
+  cursor: pointer;
 }
 .search-section .tags ul .tags-appliance {
   list-style: none;
@@ -88,6 +89,7 @@ header h1 {
 .search-section .tags ul .tags-appliance img {
   width: 1.2em;
   margin-left: 6px;
+  cursor: pointer;
 }
 .search-section .tags ul .tags-ustensil {
   list-style: none;
@@ -104,6 +106,7 @@ header h1 {
 .search-section .tags ul .tags-ustensil img {
   width: 1.2em;
   margin-left: 6px;
+  cursor: pointer;
 }
 .search-section .filters {
   width: 80%;
@@ -178,6 +181,7 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .search-section .filters .appliances {
   margin: 10px;
@@ -246,6 +250,7 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .search-section .filters .ustensils {
   margin: 10px;
@@ -314,6 +319,7 @@ header h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 .search-section .filters .fas {
   width: 20%;
@@ -350,8 +356,9 @@ header h1 {
 }
 .recipe-section .thumbnail img {
   background-color: #cecece;
-  height: 100%;
+  height: 50%;
   width: 100%;
+  object-fit: cover;
 }
 .recipe-section .thumbnail-head {
   margin: 10px;

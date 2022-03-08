@@ -4,13 +4,14 @@ class RecipeCard {
     this.ingredients = recipe.ingredients
     this.time = recipe.time
     this.description = recipe.description
+    this.image = recipe.image
   }
 
   createRecipeCard() {
   
     const recipeCard = `
               <article class="thumbnail">
-                <img src="" alt="Illustration de ${this.name}">
+                <img src="./public/images/${this.image}" alt="Illustration de ${this.name}">
                 <div class="thumbnail-head">
                     <h2>${this.name}</h2>
                     <div class="clock">
