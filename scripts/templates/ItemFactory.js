@@ -1,10 +1,9 @@
 class ItemFactory {
-  constructor(recipes) {
-    this.recipes = recipes;
+  constructor() {
     this.newTag()
   }
 
-  createItems() {
+  createItems(recipe) {
     let ingredientsDom = "";
     let appliancesDom = "";
     let ustensilsDOM = "";
@@ -13,8 +12,8 @@ class ItemFactory {
     let appliancesList = [];
     let ustensilsList = [];
 
-    for (let index = 0; index < this.recipes.length; index++) {
-      const element = this.recipes[index];
+    for (let index = 0; index < recipe.length; index++) {
+      const element = recipe[index];
       element.ingredients.map((ingredient) =>
         ingredientsList.push(ingredient.ingredient.toLowerCase())
       );

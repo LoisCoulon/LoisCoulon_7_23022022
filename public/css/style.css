@@ -183,6 +183,9 @@ header h1 {
   text-overflow: ellipsis;
   cursor: pointer;
 }
+.search-section .filters .ingredients-list li:hover {
+  transform: translateX(1%);
+}
 .search-section .filters .appliances {
   margin: 10px;
   width: 170px;
@@ -252,6 +255,9 @@ header h1 {
   text-overflow: ellipsis;
   cursor: pointer;
 }
+.search-section .filters .appliances-list li:hover {
+  transform: translateX(1%);
+}
 .search-section .filters .ustensils {
   margin: 10px;
   width: 170px;
@@ -320,6 +326,9 @@ header h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+}
+.search-section .filters .ustensils-list li:hover {
+  transform: translateX(1%);
 }
 .search-section .filters .fas {
   width: 20%;
