@@ -3,9 +3,9 @@ class RecipeFactory {
     this.recipes = recipes;
   }
 
-  createRecipes() {
+  createRecipes(recipesList) {
     let recipeCardsDom = "";
-    this.recipes.forEach((recipe) => {
+    recipesList.forEach((recipe) => {
       const template = new RecipeCard(recipe);
       recipeCardsDom += template.createRecipeCard();
     });
