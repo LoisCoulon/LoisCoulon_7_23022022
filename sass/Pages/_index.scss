@@ -44,10 +44,34 @@ header {
     }
   }
 
+  .tags{
+    width: 80%;
+    margin-top: 15px;
+    ul{
+      display: flex;
+      justify-content: left;
+
+      .tags-ingredient{
+        @include tagslist;
+        background-color: $blue;
+      }
+      .tags-appliance{
+        @include tagslist;
+        background-color: $green;
+
+      }
+      .tags-ustensil{
+        @include tagslist;
+        background-color: $orange;
+
+      }
+    }
+  }
+
   .filters {
     width: 80%;
     display: flex;
-    margin: 30px;
+    margin-bottom: 10px;
 
     .ingredients {
       @include filter;

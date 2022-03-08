@@ -8,7 +8,7 @@ class ListItem {
   createIngredientsList() {
     let ingredientsList = ``
     this.ingredients.forEach(ingredient => {
-      ingredientsList += `<li>${ingredient}</li>`;
+      ingredientsList += `<li class="ingredients-list-item" data-set="${ingredient}">${ingredient}</li>`;
     });
     return ingredientsList;
   }
@@ -16,7 +16,7 @@ class ListItem {
   createAppliancesList() {
     let appliancesList = ``
     this.appliances.forEach(appliance => {
-      appliancesList += `<li>${appliance}</li>`;
+      appliancesList += `<li class="appliances-list-item" data-set="${appliance}">${appliance}</li>`;
     });
     return appliancesList;
   }
@@ -24,7 +24,7 @@ class ListItem {
   createUstensilsList() {
     let ustensilsList = ``
     this.ustensils.forEach(ustensil=> {
-      ustensilsList += `<li>${ustensil}</li>`
+      ustensilsList += `<li class="ustensils-list-item" data-set="${ustensil}">${ustensil}</li>`
     })
     return ustensilsList
   }

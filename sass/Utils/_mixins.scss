@@ -67,3 +67,20 @@
     text-overflow: ellipsis;
   }
 }
+
+@mixin tagslist {
+  list-style: none;
+  margin: 5px;
+  color: white;
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    width: 1.2em;
+    margin-left: 6px;
+  }
+}

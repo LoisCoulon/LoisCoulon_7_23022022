@@ -49,10 +49,66 @@ header h1 {
   margin: 10px;
   cursor: pointer;
 }
+.search-section .tags {
+  width: 80%;
+  margin-top: 15px;
+}
+.search-section .tags ul {
+  display: flex;
+  justify-content: left;
+}
+.search-section .tags ul .tags-ingredient {
+  list-style: none;
+  margin: 5px;
+  color: white;
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3282F7;
+}
+.search-section .tags ul .tags-ingredient img {
+  width: 1.2em;
+  margin-left: 6px;
+}
+.search-section .tags ul .tags-appliance {
+  list-style: none;
+  margin: 5px;
+  color: white;
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #68D9A4;
+}
+.search-section .tags ul .tags-appliance img {
+  width: 1.2em;
+  margin-left: 6px;
+}
+.search-section .tags ul .tags-ustensil {
+  list-style: none;
+  margin: 5px;
+  color: white;
+  padding: 8px 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D04F4F;
+}
+.search-section .tags ul .tags-ustensil img {
+  width: 1.2em;
+  margin-left: 6px;
+}
 .search-section .filters {
   width: 80%;
   display: flex;
-  margin: 30px;
+  margin-bottom: 10px;
 }
 .search-section .filters .ingredients {
   margin: 10px;
