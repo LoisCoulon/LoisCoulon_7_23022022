@@ -8,6 +8,23 @@ class ItemFactory {
     let appliancesDom = "";
     let ustensilsDOM = "";
 
+    const ingredient = this.itemArray(recipe).ingredient
+    const appliance = this.itemArray(recipe).appliance
+    const ustensil = this.itemArray(recipe).ustensil
+
+    ingredientsDom += ingredient.createIngredientsList();
+    appliancesDom += appliance.createAppliancesList();
+    ustensilsDOM += ustensil.createUstensilsList();
+
+    document.querySelector(".ingredients .ingredients-list").innerHTML =
+      ingredientsDom;
+    document.querySelector(".appliances .appliances-list").innerHTML =
+      appliancesDom;
+    document.querySelector(".ustensils .ustensils-list").innerHTML =
+      ustensilsDOM;
+  }
+
+  itemArray(recipe) {
     let ingredientsList = [];
     let appliancesList = [];
     let ustensilsList = [];
@@ -30,16 +47,7 @@ class ItemFactory {
     const appliance = new ListItem(setAppliancesList);
     const ustensil = new ListItem(setUstensilsList);
 
-    ingredientsDom += ingredient.createIngredientsList();
-    appliancesDom += appliance.createAppliancesList();
-    ustensilsDOM += ustensil.createUstensilsList();
-
-    document.querySelector(".ingredients .ingredients-list").innerHTML =
-      ingredientsDom;
-    document.querySelector(".appliances .appliances-list").innerHTML =
-      appliancesDom;
-    document.querySelector(".ustensils .ustensils-list").innerHTML =
-      ustensilsDOM;
+    return {ingredient, appliance, ustensil}
   }
 
   newTag() {

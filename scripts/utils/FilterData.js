@@ -11,6 +11,8 @@ class FilterData {
     this.recipeFactory.createRecipes(this.recipes);
     this.itemFactory.createItems(this.recipes);
     this.filterAppliances()
+    this.filterIngredients()
+    this.filterUstensils()
   }
 
   filterData() {
@@ -31,7 +33,21 @@ class FilterData {
   }
 
   filterIngredients() {
+    // On récupère le tableau des ingédients filtré (retourne seulement un tableau filtré)
     const ingredientInput = document.querySelector(".ingredients input")
+    ingredientInput.addEventListener("input", (e) => {
+      let value = e.target.value.toLowerCase();
+
+      let filteredArray = []
+      this.recipes.filter((recipe) => {
+        recipe.ingredients.filter((ingredient) =>{
+          if(ingredient.ingredient.toLowerCase().includes(value)) {
+            filteredArray.push(ingredient.ingredient)
+          }
+        })
+      })   
+      console.log(filteredArray)
+    });
   }
 
   filterAppliances() {
@@ -41,14 +57,12 @@ class FilterData {
       let value = e.target.value.toLowerCase();
       if (value.length > 0) {
         const data = this.recipes.filter((recipe) =>
-          recipe.appliance.toLowerCase().includes(value))
-        console.log(data)
+        recipe.appliance.toLowerCase().includes(value))
         this.itemFactory.createItems(data);
       } else {
-      this.recipeFactory.createRecipes(this.recipes);
       this.itemFactory.createItems(this.recipes);
       }
-    });
+    });    
 
     // filtrage des recettes par appareil au clic
     document.querySelectorAll(".search-section .filters .appliances-list li").forEach(li => 
@@ -62,8 +76,21 @@ class FilterData {
     )
   }
 
+  // On récupère le tableau des ustensils filtré (retourne seulement un tableau filtré)
   filterUstensils() {
     const ustensilInput = document.querySelector(".ustensils input")
+    ustensilInput.addEventListener("input", (e) => {
+      let value = e.target.value.toLowerCase();
+      let filteredArray = []
+      this.recipes.filter((recipe) => {
+        recipe.ustensils.filter((ustensil) =>{
+          if(ustensil.toLowerCase().includes(value)) {
+            filteredArray.push(ustensil)
+          }
+        })
+      })   
+      console.log(filteredArray)
+    })
   }
 
 
