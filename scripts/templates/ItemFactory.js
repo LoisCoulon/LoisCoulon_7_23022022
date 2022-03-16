@@ -56,14 +56,29 @@ class ItemFactory {
       if (e.target.className === "ingredients-list-item") {
         const ingredient = new Tag().createTag("tags-ingredient", e.target.dataset.set)
         ul.appendChild(ingredient)
-
+  
+        ingredient.querySelector(".closeTag").addEventListener("click", () => {
+          const remover = new Tag
+          remover.removeTag(ingredient)
+        })
+        
       } else if (e.target.className === "appliances-list-item"){
         const appliance = new Tag().createTag("tags-appliance", e.target.dataset.set)
         ul.appendChild(appliance)
 
+        appliance.querySelector(".closeTag").addEventListener("click", () => {
+          const remover = new Tag
+          remover.removeTag(appliance)
+        })
+
       } else if (e.target.className === "ustensils-list-item"){
         const ustensil = new Tag().createTag("tags-ustensil", e.target.dataset.set)
         ul.appendChild(ustensil)
+
+        ustensil.querySelector(".closeTag").addEventListener("click", () => {
+          const remover = new Tag
+          remover.removeTag(ustensil)
+        })
       }
     })
   }

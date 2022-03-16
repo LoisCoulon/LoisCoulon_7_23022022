@@ -7,9 +7,14 @@ class Tag {
     li.className = classname;
     li.textContent = itemName;
     img.src = "./public/images/cross.png";
+    img.className = "closeTag"
     img.alt = "cross item";
-    img.setAttribute("onclick", "return this.parentNode.remove();");
     li.appendChild(img);
     return li;
   }
+
+  removeTag(tag) {
+    tag.style.display = 'none'
+  }
 }
+
