@@ -3,6 +3,7 @@ export const recipes = [
         "id": 1,
         "name" : "Limonade de Coco",
         "servings" : 1,
+        "image": "limonade-de-coco.jpg",
         "ingredients": [
             {
                 "ingredient" : "Lait de coco",
@@ -36,6 +37,7 @@ export const recipes = [
         "id": 2,
         "name" : "Poisson Cru à la tahitienne",
         "servings": 2,
+        "image": "poisson-cru-a-la-tahitienne.jpg",
         "ingredients": [
             {
                 "ingredient" : "Thon Rouge (ou blanc)",
@@ -72,6 +74,7 @@ export const recipes = [
         "id": 3,
         "name": "Poulet coco réunionnais",
         "servings": 4,
+        "image": "poulet-coco-reunionnais.jpg",
         "ingredients": [
             {
                 "ingredient": "Poulet",
@@ -109,6 +112,7 @@ export const recipes = [
         "id": 4,
         "name": "Salade de riz",
         "servings": 4,
+        "image": "salade-de-riz.jpg",
         "ingredients":[
             {
                 "ingredient": "Riz blanc",
@@ -147,6 +151,7 @@ export const recipes = [
         "id": 5,
         "name": "Tarte au thon",
         "servings": 4,
+        "image": "tarte-au-thon.jpg",
         "ingredients":[
            {
                "ingredient": "Pâte feuilletée",
@@ -186,6 +191,7 @@ export const recipes = [
         "id": 6,
         "name": "Tarte aux pommes",
         "servings": 6,
+        "image": "tarte-aux-pommes.jpg",
         "ingredients":[
             {
                 "ingredient": "Pâte brisée",
@@ -224,6 +230,7 @@ export const recipes = [
         "id": 7,
         "name": "Tartelettes au chocolat et aux fraises",
         "servings": 6,
+        "image": "tartelette-au-chocolat-et-aux-fraises.jpg",
         "ingredients":[
             {
                 "ingredient": "Pâte sablée",
@@ -252,11 +259,12 @@ export const recipes = [
         "time": 50,
         "description": "Etaler la pate dans les moules à tartelette. Faire cuire la pate 30 minutes. Découper le chocolat en morceau et le faire chauffer, y ajouter la crême liquide, ajouter le beurre et remuer jusqu'à avoir une pâte homogène. Verser la pate sur les tartelettes. Couper les fraises en 2 et les positionner sur ",
         "appliance":"Four",
-        "ustensils":["moule à tartelettes (6)", "casserolle"]
+        "ustensils":["moule à tartelettes (6)", "casserole"]
     }, {
         "id": 8,
         "name": "Brownie",
         "servings": 10,
+        "image": "brownie.jpg",
         "ingredients":[
            {
                 "ingredient": "Noix",
@@ -292,11 +300,12 @@ export const recipes = [
         "time": 60,
         "description": "Hachez les noix grossièrement. Faire fondre le chocolat avec le beurre. Mélanger les oeuf et le sucre et mélanger au chocolat. Ajouter la farine. Mélanger afin d'avoir quelque chose d'homogène puis incorporer les noix. Verser la préparation dans un moule de préférence rectangulaire. Cuire 2O à 25 minutes à 180°. Sortez du four et attendez quelques minutes pour démouler. Servir avec une boule de glace pour plus de gourmandise.",
         "appliance": "Four",
-        "ustensils": ["moule à gateaux", "casserolle"]
+        "ustensils": ["moule à gateaux", "casserole"]
     },
     {
         "id": 9,
         "name": "Salade Méditerannéene fraiche au chèvre",
+        "image": "salade-mediteranneene-fraiche-au-chevre.jpg",
         "servings": 4,
         "ingredients":[
             {
@@ -329,6 +338,7 @@ export const recipes = [
     {
         "id": 10,
         "name": "Tartiflette",
+        "image": "tartiflette.jpg",
         "servings": 4,
         "ingredients":[
             {
@@ -363,6 +373,7 @@ export const recipes = [
     },{
         "id": 11,
         "name": "Salade tomate, mozzarella et pommes",
+        "image": "salade-tomate-mozarella-et-pommes.jpg",
         "servings": 4,
         "ingredients":[
             {
@@ -401,6 +412,7 @@ export const recipes = [
     },{
         "id": 12,
         "name": "Compote pomme rhubarbe",
+        "image": "compote-pomme-rhubarbe.jpg",
         "servings": 4,
         "ingredients":[
             {
@@ -424,13 +436,14 @@ export const recipes = [
             }
         ],
         "time": 40,
-        "description": "Éplucher les fruits et les couper en morceaux, les mettre dans une casserolle en ajoutant l'eau et le sucre vanillé. Laisser cuire 15 minutes en remuant régulièrement.",
+        "description": "Éplucher les fruits et les couper en morceaux, les mettre dans une casserole en ajoutant l'eau et le sucre vanillé. Laisser cuire 15 minutes en remuant régulièrement.",
         "appliance": "Casserole",
         "ustensils": ["couteau", "économe"]
     },
     {
         "id": 13,
         "name": "Salade mâchée de patates",
+        "image": "salade-machee-de patates.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -467,6 +480,7 @@ export const recipes = [
     {
         "id": 14,
         "name": "Galette Bretonne Saucisse et Fromage à raclette",
+        "image": "galette-bretonne-saucisse-et-fromage-a-raclette.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -507,6 +521,7 @@ export const recipes = [
     {
         "id": 15,
         "name": "Crêpes Chocolat Banane",
+        "image": "crepe-chocolat-banane.jpg",
         "servings": 10,
         "ingredients": [
             {
@@ -546,6 +561,7 @@ export const recipes = [
     {
         "id": 16,
         "name": "Gratin de pâtes à la tomate",
+        "image": "gratin-de-pates-a-la-tomate.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -582,6 +598,7 @@ export const recipes = [
     {
         "id": 17,
         "name": "Smoothie à la fraise",
+        "image": "smoothie-a-la-fraise.jpg",
         "servings": 6,
         "ingredients": [
             {
@@ -614,6 +631,7 @@ export const recipes = [
     {
         "id": 18,
         "name": "Smoothie ananas et vanille",
+        "image": "smoothie-ananas-et-vanille.jpg",
         "servings": 5,
         "ingredients": [
             {
@@ -639,6 +657,7 @@ export const recipes = [
     {
         "id": 19,
         "name": "Shake Banane Kiwi",
+        "image": "shake-banane-kiwi.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -672,6 +691,7 @@ export const recipes = [
     {
         "id": 20,
         "name": "Pates Carbonara",
+        "image": "pates-carbonara.jpg",
         "servings": 5,
         "ingredients": [
             {
@@ -708,6 +728,7 @@ export const recipes = [
     {
         "id": 21,
         "name": "Spaghettis à la bolognaise",
+        "image": "spaghettis-a-la-bolognaise.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -742,12 +763,13 @@ export const recipes = [
         ],
         "time": 30,
         "description":"Cuisiner la viande hachée dans une poelle à frire. Dans une autre faire cuire les oignons découpés en fins dés avec un peu de beurre. Ajouter du vin rouge. Mélanger les oigons avec la viande hachée. Faire cuire les pates le temps indiqué sur le paquet. Ajouter le coulis de tomates à la viande hachée. Une fois que les pates sont cuites, ajouter la crème fraiche à la viande hachée. Serivir.",
-        "appliance": "Casserolle.",
+        "appliance": "Casserole",
         "ustensils":["Cuillère en bois", "louche", "couteau"]
     },
     {
         "id": 22,
         "name": "Fondant au chocolat",
+        "image": "fondant-au-chocolat.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -778,11 +800,12 @@ export const recipes = [
         "time": 30,
         "description":"Faire fondre le chocolat et le beurre au bain marie. Dans un saladier battre les oeufs avec le sucre jusqu'à obtenir une texture de type mousse. Ajouter la farine ainsi que le mélange de beurre et chocolat fondu. Beurrez le moule à gateaux. Mettre au four préchauffé à 200° puis faites chauffer pendant 15 minutes. C'est prêt. Servir avec une boule de glace ou une crême dessert.",
         "appliance": "Four",
-        "ustensils":["moule à gateaux", "fouet", "casserolle"]
+        "ustensils":["moule à gateaux", "fouet", "casserole"]
     },
     {
         "id": 23,
         "name": "Quiche lorraine",
+        "image": "quiche-lorraine.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -823,6 +846,7 @@ export const recipes = [
     {
         "id": 24,
         "name": "Salade de pâtes",
+        "image": "salade-de-pates.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -862,6 +886,7 @@ export const recipes = [
     {
         "id": 25,
         "name": "Cookies",
+        "image": "cookies.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -897,6 +922,7 @@ export const recipes = [
     {
         "id": 26,
         "name": "Soupe de tomates",
+        "image": "soupe-de-tomates.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -928,6 +954,7 @@ export const recipes = [
     {
         "id": 27,
         "name": "Soupe à l'oseille",
+        "image": "soupe-a-l-oseille.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -956,12 +983,13 @@ export const recipes = [
         ],
         "time": 15,
         "description":"Faire fondre l'oseille avec du beurre demi sel, ajouter un litre d'eau. Ajouter les vermicelles. Laisser cuire. une foit prêt, sortir du feu et après 5 minutes ajouter le jaune d'oeuf et la crême fraîche",
-        "appliance": "Casserolle",
+        "appliance": "Casserole",
         "ustensils":["couteau","cuillère en bois"]
     },
     {
         "id": 28,
         "name": "Soupe de poireaux",
+        "image": "soupe-de-poirreaux.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -992,11 +1020,12 @@ export const recipes = [
         "time": 80,
         "description":"Emincer les blanc de poireaux et les faire chauffer dans 25 grammes de beurre. AJouter les pommes de terres coupées en morceaux. Ajouter l'eau et laisser mijoter pour 45 minutes. Chauffer l'oseille avec le beurre restant puis incorporer le tout. Mixez. Ajoutez la crème. Bon appetit.",
         "appliance": "Mixer",
-        "ustensils":["casserolle","couteau"]
+        "ustensils":["casserole","couteau"]
     },
     {
         "id": 29,
         "name": "Houmous Express",
+        "image": "houmous-express.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -1028,6 +1057,7 @@ export const recipes = [
     {
         "id": 30,
         "name": "Purée de pois cassés",
+        "image": "puree_de_pois_casses.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1048,11 +1078,12 @@ export const recipes = [
         "time": 60,
         "description":"Mettre tous les ingrédients dans une cocotte. ajouter de l'eau pour recouvrir l'ensemble et laisser cuirre à petit feur pour 1 heure. Passer au mixer. Salez, poivrez. C'est prêt",
         "appliance": "Mixer",
-        "ustensils":["casserolle", "cuillère en bois"]
+        "ustensils":["casserole", "cuillère en bois"]
     },
     {
         "id": 31,
         "name": "Jardinière de légumes",
+        "image": "jardiniere-de-legumes.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1087,6 +1118,7 @@ export const recipes = [
     {
         "id": 32,
         "name": "Croque Monsieur à la dinde",
+        "image": "croque-monsieur-a-la-dinde.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1128,6 +1160,7 @@ export const recipes = [
     {
         "id": 33,
         "name": "Sandwich au saumon fumé",
+        "image": "sandwich-au-saumon-fume.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1163,6 +1196,7 @@ export const recipes = [
     {
         "id": 34,
         "name": "Purée de patate douce",
+        "image": "puree-de-patate-douce.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1184,13 +1218,14 @@ export const recipes = [
             }
         ],
         "time": 25,
-        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserolle d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
+        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
         "appliance": "Mixer",
         "ustensils":["couteau", "économe", "cuillère en bois"]
     },
     {
         "id": 35,
         "name": "Purée de carottes",
+        "image": "puree-de-carottes.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -1230,6 +1265,7 @@ export const recipes = [
     {
         "id": 36,
         "name": "Lasagne Courgettes et Chèvre",
+        "image": "lasagne-courgettes-et-chevre.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -1269,6 +1305,7 @@ export const recipes = [
     {
         "id": 37,
         "name": "Courgettes farcies au boeuf",
+        "image": "courgettes-farcies-au-boeuf.jpg",
         "servings": 2,
         "ingredients": [
             {
@@ -1309,6 +1346,7 @@ export const recipes = [
     {
         "id": 38,
         "name": "Pain Perdu",
+        "image": "pain-perdu.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1339,6 +1377,7 @@ export const recipes = [
     {
         "id": 39,
         "name": "Crumble aux pommes",
+        "image": "crumble-aux-pommes.jpg",
         "servings": 40,
         "ingredients": [
             {
@@ -1369,6 +1408,7 @@ export const recipes = [
     {
         "id": 40,
         "name": "Limonade",
+        "image": "limonade.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1399,6 +1439,7 @@ export const recipes = [
     {
         "id": 41,
         "name": "Mousse au chocolat",
+        "image": "mousse-au-chocolat.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1418,12 +1459,13 @@ export const recipes = [
         ],
         "time": 20,
         "description":"Séparer les blancs d'oeufs. Faire fondre le chocolat au bain marie. Ajouter les jaunes et le sucre au chocolat hors du feu. Battre les blancs en neige. Ajouter les blancs au mélange de chocolat. Mélangez délicatement avec une spatule. Servir dans un plat ou dans des verres. Mettre au frais",
-        "appliance": "Casserolle",
+        "appliance": "Casserole",
         "ustensils":["fouet", "spatule", "verres"]
     }, 
     {
         "id": 42,
         "name": "Charlotte au poires",
+        "image": "charlotte-aux-poires.jpg",
         "servings": 3,
         "ingredients": [
             {
@@ -1453,6 +1495,7 @@ export const recipes = [
     {
         "id": 43,
         "name": "Tarte au citron",
+        "image": "tarte-au-citron.jpg",
         "servings": 6,
         "ingredients": [
             {
@@ -1486,6 +1529,7 @@ export const recipes = [
     {
         "id": 44,
         "name": "Crème déssert au chocolat",
+        "image": "creme-dessert-au-chocolat.jpg",
         "servings": 6,
         "ingredients": [
             {
@@ -1516,12 +1560,13 @@ export const recipes = [
         ],
         "time": 15,
         "description":"Mélanger la farine et le beurre fondu en ajoutant le lait peu à peu. Ajouter du sucre après la cuisson. Bien mélanger. Ajouter le chocolat en morceaux et laisser chauffer 8 minutes en mélangeant avec une cuillère en bois. Mettre dans des verres",
-        "appliance": "Casserolle",
+        "appliance": "Casserole",
         "ustensils":["cuillère en bois"]
     },
     {
         "id": 45,
         "name": "Crème patissière",
+        "image": "creme-patissiere.jpg",
         "servings": 8,
         "ingredients": [
             {
@@ -1546,12 +1591,13 @@ export const recipes = [
         ],
         "time": 30,
         "description":"Faire bouillir le lait ( on peut y ajouter de l'essence de vanille. Battre les oeufs et le sucre, ajouter la farine puis finalement ajouter le lait chaud. Remettre à feu doux pour faire épaissir en remuant pendant 5 à 10 minutes.",
-        "appliance": "Casserolle",
+        "appliance": "Casserole",
         "ustensils":["fouet","saladier"]
     },
     {
         "id": 46,
         "name": "Far breton",
+        "image": "far-breton.jpg",
         "servings": 6,
         "ingredients": [
             {
@@ -1592,6 +1638,7 @@ export const recipes = [
     {
         "id": 47,
         "name": "Mousse au citron",
+        "image": "mousse-au-citron.jpg",
         "servings": 6,
         "ingredients": [
             {
@@ -1623,6 +1670,7 @@ export const recipes = [
     {
         "id": 48,
         "name": "Pizza",
+        "image": "pizza.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1658,6 +1706,7 @@ export const recipes = [
     {
         "id": 49,
         "name": "Smoothie tropical",
+        "image": "smoothie-tropical.jpg",
         "servings": 4,
         "ingredients": [
             {
@@ -1691,6 +1740,7 @@ export const recipes = [
     {
         "id": 50,
         "name": "Frangipane",
+        "image": "frangipane.jpg",
         "servings": 2,
         "ingredients": [
             {

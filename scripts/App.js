@@ -6,8 +6,10 @@ class App {
   }
 
   async main() {
-    new RecipeFactory(this.recipes).createRecipes();
-    new FilterData(this.recipes).filterData();
+    const recipeFactory = new RecipeFactory(this.recipes);
+    const itemFactory = new ItemFactory(this.recipes);
+    const filterData = new FilterData(recipeFactory, itemFactory, this.recipes);
+    filterData.filterData();
   }
 }
 
